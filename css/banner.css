@@ -1,0 +1,673 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: auto; */
+}
+
+body{
+    color:#ffffff;
+    height: 100%;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: Netflix Sans;
+    background-color: #000000 ;
+}
+
+
+    /* banner */
+
+h1{
+    font-weight: 700;
+    font-size: 3.3em;
+}
+
+#b-h2{
+    font-weight: 400;
+    font-size: 2em;
+}
+h3{
+    font-weight: 400;
+    font-size: 1.3em;
+}
+h2{
+    font-weight: 600;
+    font-size: 3em;
+    margin: 50px 0px 20px;
+}
+.p-graph{
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+section{
+    border-bottom: 8px solid #222;
+}
+.banner{ 
+    background:url(../img/netflix-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    border-bottom: 8px solid #222;
+}
+.banner-wrap{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+}
+header{
+    height: 12vh;
+}
+.nav{
+    width: 92%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#btn-signin{
+    outline: none;
+    border: none;
+    height:40px;
+    width: 90px;
+    margin: 2em 0px;
+    border-radius: 6px;
+    background-color: red;
+}
+#btn-signin a{
+    font-size: 15px;
+    color: #ffffff;
+}
+header img{
+    width: 200px;
+    height: 110px;
+}
+.hero{
+    height: 88vh;
+    width: 100%;
+    padding: 8em 0em 0em;    
+}
+.hero-wrap{
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    flex-flow:wrap;
+    align-items: center;
+    justify-content: center;
+}
+.inputButton input,
+.inputButton button
+{
+    outline: none;
+    border: none;
+    height: 60px;
+
+}
+.inputButton input{
+    flex: 4;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.inputButton button{
+    background: red;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    flex: 2;
+    
+}
+.inputButton button a{
+    font-size: 23px;
+}
+
+.inputButton{
+    width: 100%;
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    /* margin: 1em; */
+}
+.inputButton2{
+    display: none;
+}
+::placeholder{
+    font-size: 1.3em;
+    text-indent: 2em;
+}
+
+
+/* section b */
+
+.media-section{
+    width: 100%;
+    height: 65vh;
+}
+.sect-b-wrap{
+    width: 90%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.media{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-text{
+    width: 40%;
+    margin-inline-start: auto;
+    padding-top: 75px;
+    
+}
+
+.media-text-wrap{
+    width:100%;
+    /* margin-left:50px; */
+}
+.tv-video, .tv{
+    position: absolute;
+    left:10em;
+    top: 20px;
+}
+.tv-video video{
+    position: absolute;
+    width: 360px;
+    height: 350px;
+    left: 60px;
+    top: -15px;
+}
+.tv img{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+}
+
+/* download section */
+    .download-section, .download-wrap{
+        height: 80vh;
+        width: 100%;
+    }
+    .download-wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .download-text, .download-media{
+        width: 50%;
+    }
+    .download-media{
+        position: relative;
+    }
+    .downloading-section{
+        width: 350px;
+        height: 90px;
+        border-radius: 10px;
+        border: 2px solid #333;
+        background: #000000;
+        display: flex;
+        padding: 10px 8px;
+        position: absolute;
+        bottom : 100px;
+        left: 140px;
+    }
+    #download-img img{
+        width: 58px;
+        height: 65px;
+    }
+    #download-icon img{
+        width: 70px;
+        height: 72px;
+    }
+    #download-img{
+        width: 20%;
+    }
+    #download-icon{
+        width: 20%;
+    }
+    .downloading-text{
+        width: 62%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 30px;
+        font-weight: bold;
+    }
+    #d-text{
+        color: blue;
+    }
+    .download-text-wrap{
+        width: 80%;
+        padding: 70px 5px ;
+    }
+
+
+/* section 3- watch section styling */
+    .watch-section{
+        height: 45vh;
+        width: 100%;
+    }
+    .watch-section-text, .watchanywhere{
+        width: 46%;
+        padding: 2em 0em;
+    }
+    .watchanywhere{
+        width: 45%;
+        padding: 50px 20px 0px 0px;
+        text-align: right; 
+    }
+    .watch-section-wrap{
+        height: 45vh;
+        width: 80%;
+        margin : auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+/* kids profile begins*/
+    .kids-section, .kids-wrap{
+        height: 80vh;
+        width: 100%;
+    }
+    .kids-wrap{
+        width: 90%;
+        margin: auto;
+        display:flex;
+        flex-direction: row
+    }
+    .kids-text{
+        width: 44%;
+        padding: 50px 0px;
+    }
+    .kids-text p{
+
+    }
+
+    /* FAQ section */
+    .faq, .faq-wrap{
+        width: 100%;
+        height: auto;
+    }
+    .faq-title{
+        text-align: center;
+    }
+    .hidden{
+        display:none;
+    }
+    /* li{
+        position: relative;
+        width: 
+    } */
+    .q-list{
+        position: relative;
+        list-style: none;
+        padding: 0.7em;
+        background: #303030;
+        margin: 8px auto;
+        font-size: 1.8em;
+        width: 55%;
+    }
+    span{
+        position: absolute;
+        right: 10px;
+        font-size: 1.5em;
+    }
+    .faq-wrap > .hero-wrap > .inputButton{
+        /* margin: 0 auto;
+        height: 150px;
+        background: brown; */
+    }
+    .faq-input{
+        margin: 0 auto;
+    }
+
+/* footer */
+    footer{
+        width: 100%;
+    }
+    .footer-wrap{
+        width: 70%;
+        margin-left: 20%;
+        color:#757575;
+    }
+    .footer-top{
+        font-size: 1.3em;
+        margin: 50px 30px 30px;
+    }
+    .footer-top a{
+        color:#757575;
+    }
+    .footer-link{
+        color:#757575;
+        text-decoration: none;
+    }
+    .footer-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+    .f-list-item{
+        width: 200px;
+        font-size: 0.8em;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-country{
+        font-size: 14px ;
+        color: #757575;
+        padding-bottom: 40px;
+        margin-left:30px;
+    }
+
+
+/* hover effect */
+
+/* mediaqueries */
+
+
+@media (min-width: 1001px) and (max-width: 1200px){
+    /* media query for banner */
+    
+    .hero-wrap{
+        height: 400px;
+        width: 65%;
+        padding: 0;
+    }
+    /* media query for banner ends*/
+    
+}
+
+@media (max-width: 1000px){
+    /* media query for banner */
+     
+    .body{
+        letter-spacing: 5px;
+    }
+    h1{
+        font-size: 3.5em;
+    }
+    #b-h2{
+        /* margin:0px; */
+        font-size: 2.2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .nav{
+        width: 95%;
+    }
+    #btn-signin{
+        height:40px;
+        width: 100px;
+        margin: 2em 0px;
+        border-radius: 6px;
+        background-color: red;
+    }
+    #btn-signin a{
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .hero-wrap{
+        height: 380px;
+        width: 75%;
+        padding: 0;
+    }
+    .inputButton{
+        display: none;
+    }
+    .inputButton2{
+        display: block;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputButton2 input{
+        width: 95%;
+        border-radius: 10px;
+        height: 60px;
+        margin: 1em;
+        
+    }
+    .inputButton2 button{
+        border-radius: 30px;
+        width: 40%;
+        height: 60px;
+        background: red;
+    }
+    .inputButton2 button a{
+        font-size: 2em;
+    }
+    /* media query for banner ends*/
+    
+}
+@media (max-width: 999px) {
+    /* media query for banner */
+
+    h1{
+        font-size: 2.5em;
+    }
+    #b-h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .hero{
+        height: 88vh;
+        width: 100%;
+        padding: 5em 0em 0em;    
+    }
+    .hero-wrap{
+        width: 80%;
+        height: 400px;
+    }
+    .inputButton2 button a{
+        font-size: 1.5em;
+    }
+    /* media query for banner ends*/
+    
+}
+@media (max-width: 600px){
+    /* media query for banner */
+    
+    h1{
+        font-size: 2.5em;
+    }
+    #b-h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .banner{ 
+        height: 95vh;
+    }
+    /* media query for banner ends */
+
+    /* section two begins */
+    h2{
+        font-weight: 400;
+        font-size: 2em;
+        margin: 10px 0px;
+    }
+    .p-graph{
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .media-section{
+        height: 90vh;
+        border-bottom: 8px solid #222;
+    }
+    .sect-b-wrap{
+        /* width: 90%; */
+        margin: 0px auto;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+    .media, 
+    .media-text{
+        width: 100%;
+    }
+    .media-text-wrap{
+        width:100%;
+        text-align: center;
+    }
+    .tv-video, .tv{
+        position: absolute;
+        left:20px;
+    }
+    .tv-video video{
+        position: absolute;
+        width: 340px;
+        height: 320px;
+        left: 55px;
+        top: -12px;
+    }
+    .tv img{
+        position: absolute;
+        width: 400px;
+        height: 300px;
+    } 
+
+    /* watch section */
+
+    .watch-section{
+        height: 65vh;
+        width: 100%;
+    }
+    .watch-section-text, .watchanywhere{
+        text-align: center;
+        width:80%;
+    }
+    
+    .watch-section-wrap{
+        height: 65vh;
+        width: 80%;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .kids-section */
+    .kids-section, .kids-wrap{
+        height: 100vh;
+        width: 100%;
+    }
+    .kids-wrap{
+        width: 90%;
+        margin: auto;
+        display:flex;
+        flex-direction:column;
+    }
+    .kids-text, .kids-image{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        /* padding: 50px 0px; */
+    }
+    .kids-image img{
+        width: 90%;
+        height: 400px;
+    }
+
+    /* FAQ section */
+    
+    .q-list{
+        font-size: 1.1em;
+        width: 70%;
+    }
+    /* footer */
+    .footer-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 5px;
+        padding-top: 10px;
+    }
+    .f-list-item{
+        width: 150px;
+        font-size: 0.8em;
+        padding-bottom: 10px;
+    }
+    .footer-wrap{
+        width: 80%;
+    }
+    /* footer ends*/
+
+    /* download section */
+    .download-section{
+        height: 100vh;
+    }
+    .download-wrap{
+        height: 100vh;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .download-text, .download-media{
+        width: 90%;
+    }
+    .download-text{
+        height: 200px;
+    }
+    .download-media{
+        height: 400px;
+        
+    }
+    .download-media img{
+        height:350px;
+        width: 450px;
+    }
+    .downloading-section{
+        width: 300px;
+        height: 80px;
+        bottom : 80px;
+        left: 70px;
+    }
+
+    #download-img img{
+        width: 50px;
+        height: 60px;
+    }
+    #download-icon img{
+        width: 60px;
+        height: 62px;
+    }
+    .downloading-text{
+        width: 62%;
+        padding: 7px 10px;
+    }
+    .download-text-wrap{
+        width:85%;
+        margin: auto;
+        /* padding: 70px 5px; */
+        text-align: center;
+    }
+
+
+}
