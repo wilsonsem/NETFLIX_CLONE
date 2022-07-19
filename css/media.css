@@ -1,0 +1,536 @@
+/* mediaqueries */
+
+
+@media (min-width: 1001px) and (max-width: 1200px){
+    /* media query for banner */
+    
+    .hero-wrap{
+        height: 400px;
+        width: 65%;
+        padding: 0;
+    }
+    /* media query for banner ends*/
+    .sect-b-wrap{
+        width: 100%;
+        /* height: 65vh;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap; */
+    }
+    .media-text{
+        width: 50%;
+        /* margin-inline-start: auto; */
+        padding: 3em 1.5em;
+    }
+    .tv-video, .tv{
+        /* position: absolute; */
+        left: -2em;
+        /* top: 20px; */
+    }
+    .download-media img{
+        width: 500px;
+        height: 400px;
+    }
+    .downloading-section{
+        /* width: 300px; */
+        /* height: 80px; */
+        /* border-radius: 10px; */
+        bottom : 105px;
+        left: 70px;
+    }
+    .watch-section,
+    .watch-section-wrap{
+        height: 50vh;
+    }
+    .watch-section-text{
+        padding: 0;
+        width: 50%;
+    }
+    .form{
+        padding-top: 30px;
+    }
+    .form-wrap{
+        width: 50%;
+        height: 480px;
+    }
+}
+
+@media (max-width: 1000px){
+    /* media query for banner */
+     
+    .body{
+        letter-spacing: 5px;
+    }
+    h1{
+        font-size: 3.5em;
+    }
+    #b-h2{
+        /* margin:0px; */
+        font-size: 2.2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .nav{
+        width: 95%;
+    }
+    #btn-signin{
+        height:40px;
+        width: 100px;
+        margin: 2em 0px;
+        border-radius: 6px;
+        background-color: red;
+    }
+    #btn-signin a{
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .hero-wrap{
+        height: 350px;
+        width: 75%;
+        padding: 0;
+    }
+    .inputButton{
+        display: none;
+    }
+    .inputButton2{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputButton2 input{
+        width: 95%;
+        border-radius: 10px;
+        height: 60px;
+        margin: 1em;
+        
+    }
+    .inputButton2 button{
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        width: 40%;
+        height: 60px;
+        background: red;
+    }
+    .inputButton2 button a{
+        font-size: 2em;
+    }
+    /* media query for banner ends*/
+    
+}
+@media (max-width: 999px) {
+    /* media query for banner */
+
+    h1{
+        font-size: 2.5em;
+    }
+    #b-h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    header img{
+        width: 150px;
+        height: 90px;
+    }
+    .hero{
+        height: 88vh;
+        width: 100%;
+        padding: 5em 0em 0em;    
+    }
+    /* .hero-wrap{
+        width: 80%;
+        height: 400px;
+    } */
+    .inputButton2 button a{
+        font-size: 1.5em;
+    }
+    /* media query for banner ends*/
+    .sect-b-wrap{
+        width: 100%;
+        /* height: 65vh;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap; */
+    }
+    .media-text{
+        width: 50%;
+        /* margin-inline-start: auto; */
+        padding: 3em 1.5em;
+    }
+    .tv-video, .tv{
+        /* position: absolute; */
+        left: -2em;
+        /* top: 20px; */
+    }
+
+        /* .download-section */
+
+    .download-section, .download-wrap{
+        height: 70vh;
+    }
+    .download-text-wrap{
+        width: 90%;
+        padding: 20px 5px ;
+    }
+    .download-media{
+        text-align: left;
+    }
+    .download-media img{
+        width: 450px;
+        height: 350px;
+    }
+    .download-text{
+        padding: 3em 0em;
+    }
+    .downloading-section{
+        width: 300px;
+        height: 80px;
+        border-radius: 10px;
+        /* border: 2px solid #333; */
+        /* background: #000000; */
+        /* display: flex; */
+        /* padding: 10px 8px; */
+        /* position: absolute; */
+        bottom : 95px;
+        left: 68px;
+    }
+    #download-img img{
+        width: 52px;
+        height: 60px;
+    }
+    #download-icon img{
+        width: 58px;
+        height: 58px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 2em;
+        margin: 50px 0px 20px;
+    }
+        /* .kids-section */
+
+    .kids-section, .kids-wrap{
+        height: 110vh;
+        width: 100%;
+    }
+    .kids-wrap{
+        width: 90%;
+        margin: auto;
+        display:flex;
+        flex-direction:column;
+    }
+    .kids-text, .kids-image{
+        width: 100%;
+        margin:auto;
+        text-align: center;
+        /* padding: 50px 0px; */
+    }
+    .kids-image img{
+        width: 90%;
+        height: 400px;
+    }
+    .kids-text{
+        margin-top: -25px;
+    }
+    .watch-section-wrap{
+        /* height: 45vh; */
+        width: 90%;
+        /* margin : auto; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+    }
+    .q-list{
+        font-size: 1.1em;
+        width: 75%;
+    }
+
+    .form{
+        padding-top: 30px;
+    }
+    .form-wrap{
+        width: 65%;
+        height: 480px;
+    }
+
+}
+@media (max-width: 800px){
+    /* media query for banner */
+    
+    h1{
+        font-size: 2.5em;
+    }
+    #b-h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .banner{ 
+        min-height: 100vh;
+    }
+    /* media query for banner ends */
+
+    /* section two begins */
+    h2{
+        font-weight: 400;
+        font-size: 2em;
+        margin: 10px 0px;
+    }
+    .p-graph{
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .media-section{
+        height: 90vh;
+        border-bottom: 8px solid #222;
+    }
+    .sect-b-wrap{
+        /* width: 90%; */
+        margin: 0px auto;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+    }
+    .media, 
+    .media-text,
+    .media-text-wrap{
+        width: 100%;
+        text-align: center;
+    }
+    /* .media-text-wrap{
+        width:100%;
+        text-align: center;
+    } */
+    .tv-video, .tv{
+        position: absolute;
+        left:22%;
+    }
+    .tv-video video{
+        position: absolute;
+        width: 340px;
+        height: 320px;
+        left: 55px;
+        top: -12px;
+    }
+    .tv img{
+        position: absolute;
+        width: 400px;
+        height: 300px;
+    } 
+
+    /* watch section */
+
+    .watch-section{
+        height: 75vh;
+        width: 100%;
+    }
+    .watch-section-text, .watchanywhere{
+        text-align: center;
+        width:80%;
+    }
+    
+    .watch-section-wrap{
+        height: 65vh;
+        width: 80%;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .kids-section */
+    .kids-section, .kids-wrap{
+        height: 100vh;
+        width: 100%;
+    }
+    .kids-wrap{
+        width: 90%;
+        margin: auto;
+        display:flex;
+        flex-direction:column;
+    }
+    .kids-text, .kids-image{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        /* padding: 50px 0px; */
+    }
+    .kids-image img{
+        width: 90%;
+        height: 350px;
+    }
+
+    /* FAQ section */
+    
+    .q-list{
+        font-size: 1.1em;
+        width: 70%;
+    }
+    /* footer */
+    .footer-list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 5px;
+        padding-top: 10px;
+    }
+    .f-list-item{
+        width: 150px;
+        font-size: 0.8em;
+        padding-bottom: 10px;
+    }
+    .footer-wrap{
+        width: 80%;
+    }
+    /* footer ends*/
+
+    /* download section */
+    .download-section{
+        height: 100vh;
+    }
+    .download-wrap{
+        height: 100vh;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .download-text, .download-media{
+        width: 90%;
+        margin: auto;
+    }
+    .download-text{
+        height: 200px;
+    }
+    .download-media{
+        height: 400px;
+        text-align: center;
+    }
+    .download-media img{
+        height:350px;
+        width: 450px;
+    }
+    .downloading-section{
+        width: 300px;
+        height: 80px;
+        bottom : 80px;
+        left: 25%;
+    }
+
+    #download-img img{
+        width: 50px;
+        height: 60px;
+    }
+    #download-icon img{
+        width: 60px;
+        height: 62px;
+    }
+    .downloading-text{
+        width: 62%;
+        padding: 7px 10px;
+    }
+    .download-text-wrap{
+        width:85%;
+        margin: auto;
+        /* padding: 70px 5px; */
+        text-align: center;
+    }
+
+        /* login form */
+    .form{
+        padding-top: 60px;
+    }
+    .form-wrap{
+        width: 80%;
+        height: 450px;
+    }
+
+}
+@media (max-width:500px){
+    
+    h1{
+        font-size: 2.3em;
+    }
+    h2{
+     
+        margin: 5px 0px;
+    }
+    .hero-wrap{
+        width: 90%;
+    }
+    .inputButton2 button{
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        width: 40%;
+        height: 50px;
+    }
+    .inputButton2 button a{
+        font-size: 1.2em;
+    }
+    .download-section, .download-wrap{
+        height: 110vh;
+    }
+    .download-media{
+        text-align: left;
+    }
+    .download-media img{
+        width: 350px;
+        height: 250px;
+    }
+    .downloading-section{
+        left: 5%;
+    }
+    .tv-video, .tv{
+        left:8%;
+    }
+    .tv-video video{
+        position: absolute;
+        width: 260px;
+        /* height: 350px; */
+        left: 40px;
+        top: -30px;
+    }
+    .tv img{
+        width: 300px;
+        height: 270px;
+    }
+    .kids-image img{
+        width: 90%;
+        height: 300px;
+    }
+    .q-list{
+        font-size: 1.1em;
+        width: 80%;
+    }
+    .footer-wrap{
+        width: 90%;
+        margin: auto;
+    }
+    .footer-top{
+        text-align: center;
+    }
+    .f-list-item{
+        padding-bottom: 10px;
+    }
+    .form{
+        padding-top: 60px;
+    }
+    .form-wrap{
+        width: 90%;
+        height: 450px;
+    }
+    
+}
