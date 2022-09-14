@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NEtflix Nigeria - Watch TV shows online, Watch Movies Online</title>
     <link rel="icon" href="./img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
@@ -15,25 +15,23 @@
             <div class="banner-wrap">
                 <header>
                     <div class="nav">
-                        <img src="./img/Netflix-Logo.png" alt="NETFLIX">
+                        <a href="./index.html"><img src="./img/Netflix-Logo.png" alt="NETFLIX"></a>
                         <button id="btn-signin"><a href="./login.html">Sign In</a></button>
                     </div>
                 </header>
                 <div class="hero">
                     <div class="hero-wrap">
-                        <!-- <div class="hero-text">                     -->
-                            <h1>Unlimited movies, TV shows, and more.</h1>
-                            <h2 id="b-h2">Watch anywhere. Cancel anytime.</h2>
-                            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                            <div class="inputButton">
-                                <input type="text" name="email" placeholder="Email address">
-                                <button><a href="./login.html">Get Started >></a> </button>
-                            </div>
-                            <div class="inputButton2">
-                                <input type="text" name="email" placeholder="Email address">
-                                <button><a href="./login.html">Get Started ></a> </button>
-                            </div>
-                        <!-- </div> -->
+                        <h1>Unlimited movies, TV shows, and more.</h1>
+                        <h2 id="b-h2">Watch anywhere. Cancel anytime.</h2>
+                        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                        <div class="inputButton">
+                            <input type="text" name="email" placeholder="Email address" required>
+                            <button><a href="./login.html">Get Started ></a> </button>
+                        </div>
+                        <div class="inputButton2">
+                            <input type="text" name="email" placeholder="Email address" required>
+                            <button><a href="./login.html">Get Started ></a> </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,28 +109,43 @@
                 <div class="FAQ-list">
                     <ul>
                         <li class="q-list">What is Netflix?
-                            <span class="l-dropdown">+</span>
-                            <p class="hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias pariatur repellendus culpa porro rerum ab. Voluptate culpa atque similique maxime! Recusandae repudiandae sapiente ad quisquam aliquam alias sint soluta vitae!</p>
+                            <button class="accordion"><span class="l-dropdown">+</span></button>
+                            <p class="hidden">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.<br>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                            </p></p>
                         </li>
-                        <li class="q-list">How much does netflix cost<span class="l-dropdown">+</span>
-                        
+                        <li class="q-list">How much does netflix cost?
+                            <button class="accordion"><span class="l-dropdown">+</span></button>
+                            <p class="hidden"> Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.</p>
                         </li>
-                        <li class="q-list">Where can I watch?<span class="l-dropdown">+</span></li>
-                        <li class="q-list">How do i cancel?<span class="l-dropdown">+</span></li>
-                        <li class="q-list">What can i watch on Netflix?<span class="l-dropdown">+</span></li>
-                        <li class="q-list">Is netflix good for kids?<span class="l-dropdown">+</span></li>
+                        <li class="q-list">Where can I watch?
+                            <button class="accordion"><span class="l-dropdown">+</span></button>
+                            <p class="hidden">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</br>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                        </li>
+                        <li class="q-list">How do i cancel?
+                            <button class="accordion"><span class="l-dropdown">+</span></button>
+                            <p class="hidden">Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                            </p>
+                        </li>
+                        <li class="q-list">What can i watch on Netflix?
+                            <button class="accordion"><span class="l-dropdown">+</span></button>
+                            <p class="hidden"> Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                        </li>
+                        <li class="q-list">Is netflix good for kids?
+                            <button class="accordion"><span class="l-dropdown">+</span></button>
+                            <p class="hidden">Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="hero-wrap">
                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                 <div class="inputButton" id="faq-input">
-                    <input type="text" name="email" placeholder="Email address">
-                    <button><a href="#">Get Started >></a> </button>
+                    <input type="text" name="email" placeholder="Email address" required>
+                    <button><a href="#">Get Started ></a></button>
                 </div>
                 <div class="inputButton2">
-                    <input type="text" name="email" placeholder="Email address">
-                    <button><a href="#">Get Started >></a> </button>
+                    <input type="text" name="email" placeholder="Email address" required>
+                    <button type="submit"><a href="#">Get Started >></a> </button>
                 </div>
             </div>
         </section>
@@ -161,5 +174,6 @@
             </div>
         </footer>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>

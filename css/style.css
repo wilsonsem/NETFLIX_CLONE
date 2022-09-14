@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* width: auto; */
 }
-
 body{
     color:#ffffff;
     height: 100%;
@@ -12,10 +10,7 @@ body{
     font: Netflix Sans;
     background-color: #000000 ;
 }
-
-
-    /* banner */
-
+/* banner */
 h1{
     font-weight: 700;
     font-size: 3.3em;
@@ -103,13 +98,16 @@ header img{
     align-items: center;
     justify-content: center;
 }
+form{
+    widows: 100%;
+    display: flex;
+}
 .inputButton input,
 .inputButton button
 {
     outline: none;
     border: none;
     height: 60px;
-
 }
 .inputButton input{
     flex: 4;
@@ -127,24 +125,26 @@ header img{
 .inputButton button a{
     font-size: 23px;
 }
-
 .inputButton{
     width: 100%;
     margin: 0.5em auto;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    /* margin: 1em; */
 }
 .inputButton2{
     display: none;
 }
 ::placeholder{
-    font-size: 1.3em;
     text-indent: 2em;
 }
-
-
+input[type=text] {
+    text-indent: 2em;
+    font-size: 1em;
+  }
+  input[type=text]:focus {
+    border: 3px solid #222;
+  }
 /* section b */
 
 .media-section{
@@ -169,12 +169,10 @@ header img{
     width: 40%;
     margin-inline-start: auto;
     padding-top: 75px;
-    
 }
 
 .media-text-wrap{
     width:100%;
-    /* margin-left:50px; */
 }
 .tv-video, .tv{
     position: absolute;
@@ -200,7 +198,6 @@ header img{
         width: 100%;
     }
     .download-wrap{
-        /* width: 100%; */
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
@@ -296,9 +293,7 @@ header img{
         width: 44%;
         padding: 50px 0px;
     }
-    .kids-text p{
-
-    }
+  
 
     /* FAQ section */
     .faq, .faq-wrap{
@@ -310,11 +305,12 @@ header img{
     }
     .hidden{
         display:none;
+        padding: 5px;
     }
-    /* li{
-        position: relative;
-        width: 
-    } */
+    .display{
+        display:block;
+        margin-top: 20px ;
+    }
     .q-list{
         position: relative;
         list-style: none;
@@ -324,15 +320,14 @@ header img{
         font-size: 1.8em;
         width: 55%;
     }
-    span{
+    .q-list > button{
         position: absolute;
         right: 10px;
-        font-size: 1.5em;
-    }
-    .faq-wrap > .hero-wrap > .inputButton{
-        /* margin: 0 auto;
-        height: 150px;
-        background: brown; */
+        top: 5px;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 2em;
     }
     .faq-input{
         margin: 0 auto;
@@ -380,6 +375,6 @@ header img{
     }
 
 
-/* hover effect */
+
 
 
