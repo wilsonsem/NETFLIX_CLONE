@@ -142,7 +142,7 @@ input[type=text] {
     text-indent: 2em;
     font-size: 1em;
   }
-  input[type=text]:focus {
+input[type=text]:focus {
     border: 3px solid #222;
   }
 /* section b */
@@ -304,8 +304,7 @@ input[type=text] {
         text-align: center;
     }
     .hidden{
-        display:none;
-        padding: 5px;
+        display: none;
     }
     .display{
         display:block;
@@ -332,6 +331,35 @@ input[type=text] {
     .faq-input{
         margin: 0 auto;
     }
+
+    /* accordion styling */
+    .accordion {
+        cursor: pointer;
+        transition: 0.4s;
+      }
+    .active, .accordion:hover {
+        background-color: #777;
+      }
+      .panel {
+        padding:0 5px;
+        /* margin-top: 5px; */
+        max-height: 0;
+        text-align: justify;
+        text-justify: auto;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+      }
+      .accordion:after {
+        content: '\002B';
+        color: #fff;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
 
 /* footer */
     footer{

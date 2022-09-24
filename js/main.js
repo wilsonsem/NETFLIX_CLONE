@@ -1,12 +1,16 @@
 
-const accordion = Array.from(document.querySelectorAll(".accordion"));
-const hidden = document.querySelector(".hidden");
-console.log(accordion);
+let acc = document.getElementsByClassName("accordion");
+let text = document.getElementsByClassName("hidden");
+let i;
 
-accordion.forEach( action => {
-    action.addEventListener( "click", (e) =>{
-        console.log("working")
-        // hidden.classList.remove("hidden");
-        // hidden.classList.add("display");
-    })
-})
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
